@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Solicitud de PERMISOS</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.jpg" class="imgLogo" />
+
+      <h1 class="formulario__titulo">PERMISOS</h1>
+      <h3 class="formulario__subtitulo">Datos</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para solicitar el PERMISO.
+      </p>
+
+      <label for="nombre" class="formulario__label">Nombre</label>
+      <input
+        id="nombre"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+      <label for="ficha" class="formulario__label">Ficha</label>
+      <input
+        id="ficha"
+        type="number"
+        class="formulario__input"
+        placeholder="Indica cuál es tu ficha"
+      />  
+       
+      <label for="C_Base" class="formulario__label">Cve Depto Base</label>
+      <input
+        id="C_Base"
+        type="number"
+        class="formulario__input"
+        placeholder="Indica clave del Dpto Base"
+      />  
+
+      <label for="Desc_Base" class="formulario__label">Desc Depto Base</label>
+      <input
+        id="Desc_Base"
+        type="text"
+        class="formulario__input"
+        placeholder="Nombre de Depto Base"
+      />
+
+      <label for="categoria" class="formulario__label">Categoria Base</label>
+      <input
+        id="categoria"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu cetegoria base"
+      />     
+      
+      <label for="C_Asc" class="formulario__label">Cve Depto Asc</label>
+      <input
+        id="C_Asc"
+        type="number"
+        class="formulario__input"
+        placeholder="Indica clave del Dpto Ascenso"
+      />  
+
+      <label for="Desc_Asc" class="formulario__label">Desc Depto Asc</label>
+      <input
+        id="Desc_Asc"
+        type="text"
+        class="formulario__input"
+        placeholder="Nombre de Depto Ascenso"
+      />
+
+      <label for="fecha1" class="formulario__label"
+        >Indica la fecha de inicio</label>
+      <input
+        id="fecha1"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="fecha2" class="formulario__label"
+      >Indica la fecha de termino</label
+    >
+    <input
+      id="fecha2"
+      type="date"
+      class="formulario__input"
+      pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+    />
+
+    <label for="Clausula" class="formulario__label"
+    >Clausula</label
+  >
+  <select id="Clausula" name="listaclausulas" class="formulario__input">
+    <option>147 RENUNCIABLE</option>
+    <option>148 RENUNCIABLE SIN ANTIGUEDAD</option>
+    <option>150 ECONOMICO</option>
+  </select>
+
+     
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
