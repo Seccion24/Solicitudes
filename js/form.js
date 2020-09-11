@@ -3,7 +3,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
   
-  let telefono = "573105010573";
+  let telefono = "4646533446";
 
   let nombre = document.querySelector("#nombre").value;
   let ficha = document.querySelector("#ficha").value;
