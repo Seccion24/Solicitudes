@@ -23,23 +23,23 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 		*PERMISO*%0A
-		*Nombre:*%0A
+		*Nombre:*%20
     ${nombre}%0A
-    *Ficha:*%0A
+    *Ficha:*%20
 		${ficha}%0A
-		*Categoria Base*%0A
+		*Categoria Base:*%20
 		${categoria}%0A
-		*Clausula*%0A
+		*Clausula:*%20
 		${clausula}%0A
-    *Depto Base*%0A
+    *Depto Base:*%20
     ${depto_base}%0A
-		*Desc. Base*%0A
+		*Desc. Base:*%20
     ${desc_base}%0A
-    *Depto Asc.*%0A
+    *Depto Asc:*%20
     ${depto_asc}%0A
-		*Desc. Asc*%0A
+		*Desc. Asc:*%20
     ${desc_asc}%0A
-    *Lapso*%0A
+    *Lapso:*%20
     ${fecha1} *a* ${fecha2}%0A`;
 
 
